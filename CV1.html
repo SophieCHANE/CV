@@ -5,10 +5,15 @@
 	<title> CV de Sophie</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+
 	<style type="text/css">
 
-	.listcentre>li{
-		list-style: none;
+	body{
+		background-color: grey;
+		font-family: 'Roboto' !important;
+	}
+
+	.centre{
 		text-align: center;
 	}
 
@@ -19,10 +24,76 @@
 
 	.bleu{color: blue;}
 	.bold{font-weight: bold;}
+	.italic{font-style: italic;}
+
+
+	img{width: 150px;
+		height: 200px;
+		border-radius: 10px;
+		margin: 0 auto;
+	}
+
+	h1{
+		color: blue;
+	}
+
+	h3{
+		color: red;
+	}
+	
+
+	.gauche{
+		width:30%;
+		float: left;
+	}
+
+	.droite{
+		width: 60%;
+		float: right;
+	}
+
 
 	.tout{
-		width: 30%;
-		height: 70%;
+		width: 80%;
+		margin: 0 auto;
+		background-color: white;
+	}
+
+	.xp .exp-item {
+		margin-bottom: 30px;
+	}
+
+	.xp .exp-item:last-child {
+		margin-bottom: 15px;
+	}
+
+	.xp .exp-item .exp-date {
+		display: inline-block;
+		margin-right: 40px;
+		vertical-align: top;
+	}
+
+	.xp .exp-item .exp-desc {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+
+	.dip .dip-item {
+		margin-bottom: 30px;
+	}
+
+
+	.dip .dip-item .dip-date {
+		display: inline-block;
+		margin-right: 40px;
+		vertical-align: top;
+	}
+
+	.dip .dip-item .dip-desc {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
 	}
 
 
@@ -35,32 +106,38 @@
 
 <body>
 
-<div class=tout>
+<div class="tout">
 
 	<div class="gauche">
-		
 		<div class="photo">
+		<br>
+		<br>
+		<center>
+			<img src="photo so.png"
+		</center>
 		</div>
 
 		<div class="nom">
-			<H3>Sophie<br>CHANE-NAM</H3>
+			<span class="centre">
+				<H2>Sophie<br>CHANE-NAM</H2>
+			</span>
 
 			<br/>
 
-			<ul class="listcentre">
-				<li>6 rue des Muscadiers</li>
-				<li>Lot. Paul et Virginie</li>
-				<li>97419 La Possession</li>
+			<p class="centre">
+				6 rue des Muscadiers<br> Lot. Paul et Virginie<br>97419 La Possession
+			</p>
 
 			<br/>
 
-				<li>sophie@chane-nam.fr<li>
-				<li>0692 48 90 86</li>
-			</ul>
+				<p class="centre">sophie@chane-nam.fr<br>0692 48 90 86</p>
+			
 		</div>
 
 		<div class="info">
-			<H3>Plus d'informations</H3>
+				<br>
+				<H3>Plus d'informations</H3>
+				<hr>
 
 			<ul class="listgauch">
 				<li>37 ans</li>
@@ -71,7 +148,9 @@
 		</div>
 
 		<div class="atouts">
-			<H3>Atouts</H3>
+				<br>
+				<H3>Atouts</H3>
+				<hr>
 			<ul class="listgauch">
 				<li>Persévérante</li>
 				<li>Polyvalente</li>
@@ -82,7 +161,9 @@
 		</div>
 
 		<div class="loisirs">
-			<H3>Centres d'intérêts</H3>
+				<br>
+				<H3>Centres d'intérêts</H3>
+				<hr>
 			<ul class="listgauch">
 				<li>Nouvelles technologies</li>
 				<li>Musique</li>
@@ -92,19 +173,29 @@
 
 	</div>
 
+
+
+
+
+
 	<div class="droite">
 		
 		<div class="titre">
-			<H3> Responsable de magasin</H3>
+
+				<span class="centre">
+					<H1>Responsable de magasin</H1>
+
 			<p> Aptitude à gérer une boutique<br>(merchandising, stocks, suivi clientèle, suivi du CA)</p>
+				</span>
 		</div>
 
 		<br>
 
 		<div class="competences">
 			<H3>COMPETENCES</H3>
+			<hr>
 			<br>
-			<p>Manager le magasin</p>
+			<p class="italic">Manager le magasin</p>
 			<ul>
 				<li>Manager et encadrer une équipe de 5 personnes</li>
 				<li>Effectuer la gestion administrative</li>
@@ -113,37 +204,73 @@
 			</ul>
 			
 			<br>
-
+			<p class="italic">Gérer des relations avec les clients</p>
 			<ul>
 				<li>Gérer des relations avec les clients</li>
 				<li>Développer la relation de services</li>
 				<li>Fidéliser et créer un trafic de clientèle vers le magasin</li>
 			</ul>
 		</div>
-
+		<br>
 		<div class="xp">
 			<H3>EXPERIENCES PROFESSIONNELLES</H3>
-			<div class="dates">
-				<p>Avril 2004 - Mars 2017<br>Avril 2001 - Mars 2004</p>
+			<hr>
+			<br>
+			<br>
+			<div class="exp-item">
+				<div class="exp-date">Avril 2004 - Mars 2017</div>
+				<p class="exp-desc">Responsable de magasin <br><span class="bleu">FO-YAM Music à St Paul Savannah</span></p>
 			</div>
-			
-			<div class="emploi">
-				<p>Responsable de magasin<br>FO-YAM Music à St Paul Savannah<br> <br>Secrétaire comptable<br>Maison FO-YAM Marcel à St Denis</p>
-			</div>
-		</div>
 
-		<div class="diplomes">
+			<div class="exp-item">
+				<div class="exp-date">Avril 2001 - Mars 2004</div>
+				<p class="exp-desc">Secrétaire Comptable<br><span class="bleu">Maison FO-YAM Marcel au Chaudron </span></p>
+			</div>
+
+			<br>
+
+		</div>
+		
+		<div class="dip">
 			<H3>DIPLOMES ET FORMATIONS</H3>
-			<div class="dates">
-				<p>Avril 2018<br>Mai 2013<br>Avril 2011<br>2000-2001<br>Juillet 1999</p>
+			<hr>
+			<br>
+			<br>
+			<div class="dip-item">
+				<div class="dip-date">Avril 2018</div>
+				<p class="dip-desc">BTS Management des Unités Commerciales<br><span class="bleu">Validation des Aquis et de l'Expérience</span></p>
 			</div>
-			
-			<div class="emploi">
-				<p>BTS Management des Unités Commerciales<br>Validation des Aquis et de l'Expérience<br>Formation relative à la distribution du crédit à la consommation et à la prévention du surendettement<br>SOREFI<br>Formation relative à la distribution du crédit à la consommation et à la prévention du surendettement<br>CREDIT MODERNE<br>Formation de Technicienne en Secrétariat, option Comptabilité (niveau IV)<br>AFPAR<br>BAC Technique, STT opt. Comptabilité et Gestion<br>Lycée LEVAVASSEUR</p>
 
+
+			<div class="dip-item">
+				<div class="dip-date">Mai 2013</div>
+				<p class="dip-desc">Formation relative à la distribution du crédit à la consommation<br>et à la prévention du surendettement
+					<br>
+					<span class="bleu">SOREFI</span></p>
 			</div>
+
+			<div class="dip-item">
+				<div class="dip-date">Avril 2011</div>
+				<p class="dip-desc">Formation relative à la distribution du crédit à la consommation<br>et à la prévention du surendettement
+					<br>
+					<span class="bleu">CREDIT MODERNE</span></p>
+					<br>
+					<br>
+
+			<div class="dip-item">
+				<div class="dip-date">2000-2001</div>
+				<p class="dip-desc">Formation de Technicienne en Secrétariat, option Comptabilité (niveau IV)<br>
+					<span class="bleu">AFPAR</span></p>
+			</div>
+
+
+			<div class="dip-item">
+				<div class="dip-date">Juillet 1999</div>
+				<p class="dip-desc">BAC Technique, STT opt. Comptabilité et Gestion<br>
+					<span class="bleu">Lycée LEVAVASSEUR</span></p>
+			</div>
+
 		</div>
-
 	</div>	
 </div>
 
